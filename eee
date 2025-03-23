@@ -1,0 +1,22 @@
+/* Replace existing .second-section styles */
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .ourmenu .second-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .ourmenu {
+        padding: 40px 20px;
+    }
+}
+
+/* Remove conflicting flex styles */
+@media (max-width: 1024px) {
+    .second-section {
+        display: grid !important; /* Force grid layout */
+    }
+    /* Remove any carousel-related styles if not needed */
+}

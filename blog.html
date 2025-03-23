@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog – We craft sandwiches with the freshest ingredients</title>
+    <!----=====Styles link=====-->
+    <link rel="stylesheet" href="./styles/service.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    /* Hero section background */
+.hero-section {
+
+    min-height: 50vh; /* Reduced from 100vh */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero content */
+.hero-section .hero-content {
+    margin-top: 8vh; /* Reduced from 14vh */
+    text-align: center;
+    padding: 0px 14%;
+    margin-bottom: 40px; /* Reduced from 80px */
+}
+
+/* Mobile adjustments */
+@media (max-width: 769px) {
+    .hero-section {
+        min-height: 300px !important; /* Reduced from 510px */
+    }
+    
+    .hero-section .hero-content {
+        margin-top: 40px !important; /* Reduced from 75px */
+    }
+}
+   
+
+.hero-content{
+    margin-bottom: 0  !important;
+}
+
+
+.front-text{
+    padding: 40px 80px;
+    text-align: center;
+}
+.front-text p{
+    font-family: "DM Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #5A5A5A;
+}
+
+
+
+ /* Service section grid */
+ .service-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 40px 10%;
+        }
+        
+        .service-section div {
+            display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to the bottom */
+    padding: 20px;
+    height: 386.2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+      
+
+/* Background images for each section */
+.second-section-service-item1 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item8.jpg);
+}
+.second-section-service-item2 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item9.jpg);
+}
+.second-section-service-item3 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item10.jpg);
+}
+.second-section-service-item4{
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item7.jpg);
+}
+
+
+/* Style the headings inside */
+.service-section h3 {
+    font-family: "Inter", Sans-serif;
+    font-size: 22px;
+    font-weight: 869;
+    line-height: 36px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* Style the paragraphs inside */
+.service-section p {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 10px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.62);
+    
+}
+
+/* General button styling */
+.service-section .btn button {
+    background: linear-gradient(90deg, #CC3137 0%, #66191C 100%);
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.service-section .btn button:hover {
+    background: linear-gradient(90deg, #66191C 0%, #CC3137 100%);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Centering buttons */
+.service-section .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0 !important;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+            .service-section {
+                grid-template-columns: 1fr;
+            }
+            .front-text p{
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.front-text{
+    padding: 40px 20px;
+}
+.service-section .btn button{
+    padding: 20px 30px;
+    width: 70%;
+}
+.service-section div{
+    height: 500px;
+}
+        }
+
+
+
+
+</style>
+</head>
+<body>
+    <!----=====Hero section,=====-->
+    <div class="hero-section">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/Logo - Red.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+<li><a href="index.html">Home</a></li>
+                <li><a href="explore-menu.html">Menu</a></li>
+                <li><a href="our-service.html"">Services</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="btn">
+                <a href="explore-menu.html"><button>Order Now</button></a>
+            </div>
+
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>BenjyGrub Blog </h2>
+                
+                
+            </div>
+        </div>
+    </div>
+
+      <!----=====Our Menu section, first section=====-->
+     
+ <div class="front-text">
+    <p>Discover expert tips on office catering, healthy meal choices, and how great food fuels productivity. Stay updated with our latest offerings, food trends, and ways to make every meal more enjoyable.</p>
+ </div>
+       
+      <div class="service-section">
+          
+        <div class="second-section-service-item1">
+            <h3>The Ultimate Guide to Office Catering</h3>
+
+            <p>Keeping employees energized and focused starts with great food. Whether it’s a casual team lunch or a corporate meeting,</p>
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+
+        </div>
+        <div class="second-section-service-item2">
+            <h3>Quick & Healthy Lunch Ideas for Busy Professionals</h3>
+
+            <p>Finding time for a nutritious meal during a busy workday can be challenging. Here are five quick and healthy lunch options that keep you fueled throughout the day.</p>
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+
+
+        </div>
+        <div class="second-section-service-item3">
+            <h3>Why Meal Prep & Delivery is the Future of Corporate Lunches</h3>
+
+            <p>With fast-paced work environments, meal prep and delivery services are becoming the go-to solution for corporate lunches. But why is this trend growing so fast?</p>
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+
+
+        </div>
+        <div class="second-section-service-item4">
+            <h3>The Power of Food in Business Meetings: How Great Meals Drive Productivity</h3>
+
+            <p>Good food fuels great conversations. Whether you’re closing a deal or brainstorming the next big idea, the right meals can set the tone for a successful business meeting.</p>
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+
+
+        </div>
+     
+        
+
+    </div>
+
+       <!----====Footer Section,=====-->
+       <div class="footer">
+        <div class="upper-section">
+           
+            <div class="logo-text">
+                <img src="./img/logo-footer.png" alt="logo footer">
+                <p>Employees can pre-order meals, and BenjyGrub staff can walk through offices selling sandwiches on a “stop me and buy one” basis
+
+                </p>
+            </div>
+            <div class="pages">
+                <h2>Pages</h2>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore-menu.html">Menu</a></li>
+                <li><a href="our-service.html"">Services</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+            </div>
+            <div class="insta">
+            <h2> 
+                <a href="#">
+                Follow us on instagram <i class="fa-brands fa-instagram"></i>
+            </a>
+            </h2>
+            <div class="insta-item">
+                <div class="insta-img">
+                    <img src="./img/item11.jpg" alt="footer-image-1">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item12.jpg" alt="footer-image-2">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item13.jpg" alt="footer-image-3">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item14.jpg" alt="footer-image-4">
+                </div>
+            </div>
+            
+            </div>
+     
+       
+        </div>
+        <div class="lower-section">
+           
+            <p>Copyright © 2025 BenjyGrub. All Rights Reserved</p>
+        </div>
+       </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".nav .menu ul li a");
+
+    links.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav .menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>

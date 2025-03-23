@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – We craft sandwiches with the freshest ingredients</title>
+    <!----=====Styles link=====-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    /* Hero section background */
+.hero-section {
+
+    min-height: 50vh; /* Reduced from 100vh */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero content */
+.hero-section .hero-content {
+    margin-top: 8vh; /* Reduced from 14vh */
+    text-align: center;
+    padding: 0px 14%;
+    margin-bottom: 40px; /* Reduced from 80px */
+}
+.ourmenu{
+    padding: 40px 80px;
+}
+.ourmenu .about-us-firstsection p{
+    font-family: 'DM Sans' sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+    color: #5A5A5A;
+    text-align: center;
+
+}
+/* Mobile adjustments */
+@media (max-width: 769px) {
+    .hero-section {
+        min-height: 300px !important; /* Reduced from 510px */
+    }
+    
+    .hero-section .hero-content {
+        margin-top: 40px !important; /* Reduced from 75px */
+    }
+    .ourmenu{
+    padding: 40px 20px;
+}
+.ourmenu .about-us-firstsection p{
+    line-height: 48px;
+}
+  
+}
+@media (max-width: 426px) {
+    .ourmenu .about-us-firstsection p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+}
+
+.hero-content{
+    margin-bottom: 0  !important;
+}
+
+
+/* Add this to your existing CSS */
+.card-items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.card-one, .card-two, .card-three {
+    width: 269.97px;
+    height: 236.59px;
+    flex: 1;
+   
+    padding: 40px;
+   
+    background: #CC3137;
+
+    text-align: center;
+ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-items .card-two{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -88.31%, rgba(0, 0, 0, 0.0408) 100%);
+   
+
+}
+
+.card-items .card-two h2{
+    color:  #CC3137;
+
+}
+.card-items .card-two p{
+    color:  #CC3137 !important;
+
+}
+.card-items h2 {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -3%;
+    font-size: 56px;
+    color:  #FFFFFF;
+    
+    margin-bottom: 15px;
+}
+
+.card-items p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF !important;
+} 
+
+
+@media (max-width: 1024px) {
+    .card-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card-one, .card-two, .card-three {
+        padding: 30px;
+    }
+}
+
+
+.menu-second-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center; 
+    text-align: center;
+    background: url(./img/menu-second-section.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 630px;
+    padding: 20px; 
+}
+
+ .menu-second-section h2{
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 72px;
+    color: #FFFFFF;
+    letter-spacing: -3%;
+    padding-bottom: 20px;
+    text-align: center;
+   
+
+}
+ .menu-second-section p{
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+    color:#D4D4D4;
+    width: 89%;
+    text-align: center;
+}
+.menu-second-section button{
+    background-color: transparent;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, #CC3137 0%, #66191C 100%);
+    border: none;
+   border-radius: 40px;
+   padding: 10px 20px 10px 20px;
+   color: #fff;
+   width: 196px;
+   height: 64px;
+   margin-top: 25px;
+   border: 2px solid #CC3137;
+}
+
+/* our menu third section */
+ .menu-third-section {
+    margin: 40px auto;
+    padding: 40px 160px;
+    justify-content: center;
+  
+}
+.menu-third-section .first-section{
+    display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 130px;
+}
+ .menu-third-section .first-section h2{
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #CC3137;
+    width: 525.81px;
+    height: 112px;
+    letter-spacing: -3%;
+    
+    
+}
+.menu-third-section .first-section div {
+    width: 292.8px;
+    height: 386.2px;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+.first-section-service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 10px;
+    color: #FFFFFF;
+  
+    width: 292.8px;
+    height: 386.2px;
+    border-radius: 10px;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+/* Style the paragraphs inside */
+.first-section-service-item p {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.62);
+    
+   
+    margin: 5px 0;
+   
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+.first-section-service-item h3 {
+    font-family: "Inter", Sans-serif;
+    font-size: 24px;
+    font-weight: 869;
+    line-height: 36px;
+   letter-spacing: -3%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* our menu third section-second section */
+.menu-third-section .second-section {
+    margin: 40px auto;
+    padding: 40px 10px;
+    display: flex;
+   
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.menu-third-section .second-section div {
+    width: calc(33.33% - 20px);
+    height: 386.2px;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Background images for each section */
+.menu-third-section .second-section-service-item1 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item8.jpg);
+}
+.menu-third-section .second-section-service-item2 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item9.jpg);
+}
+.menu-third-section .second-section-service-item3 {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+        url(./img/item10.jpg);
+}
+
+/* Style the headings inside */
+.menu-third-section .second-section h3 {
+    font-family: "Inter", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraphs inside */
+.menu-third-section .second-section p {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    padding: 10px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.62);
+    
+}
+
+@media (max-width: 768px) {
+    .card-items h2 {
+        font-size: 28px;
+    }
+    
+    .card-items p {
+        font-size: 16px;
+    }
+    
+   .menu-second-section h2{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 900;
+    }
+   .menu-second-section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .menu-second-section h2{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 900;
+    }
+   .menu-second-section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+ 
+
+   
+    
+ 
+     .menu-third-section .first-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+.menu-third-section .first-section h2 {
+        width: 85%;
+        height: auto;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .menu-third-section .first-section div {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+   .menu-third-section {
+        padding: 40px 20px;
+    }
+    .second-section div:nth-last-child(-n+2) {
+       display: inline-flex;
+    }
+    
+   
+}
+
+
+
+ /* Service section grid */
+ .service-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+.service-section div {
+    display: flex;
+flex-direction: column;
+justify-content: flex-end; /* Push content to the bottom */
+padding: 20px;
+height: 386.2px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1025px) {
+    .service-section {
+        width: 100%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+}
+@media (max-width: 768px) {
+    .service-section {
+        padding: 40px 0px !important;
+        grid-template-columns: 2fr;
+    }
+}
+
+/* Background images for each section */
+.second-section-service-item1 {
+background: 
+linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+url(./img/item8.jpg);
+}
+.second-section-service-item2 {
+background: 
+linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+url(./img/item9.jpg);
+}
+.second-section-service-item3 {
+background: 
+linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+url(./img/item10.jpg);
+}
+.second-section-service-item4{
+background: 
+linear-gradient(180deg, rgba(0, 0, 0, 0) -18.82%, #000000 80.32%, #000000 99.96%), 
+url(./img/item7.jpg);
+}
+
+
+/* Style the headings inside */
+.service-section h3 {
+font-family: "Inter", Sans-serif;
+font-size: 22px;
+font-weight: 869;
+line-height: 36px;
+margin-bottom: 10px;
+color: #FFFFFF;
+}
+
+/* Style the paragraphs inside */
+.service-section p {
+font-family: "DM Sans", Sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+padding: 10px;
+border-radius: 8px;
+color: rgba(255, 255, 255, 0.62);
+
+}
+
+
+</style>
+
+</head>
+<body>
+    <!----=====Hero section,=====-->
+    <div class="hero-section">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/Logo - Red.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul><li><a href="index.html">Home</a></li>
+
+                <li><a href="explore-menu.html">Menu</a></li>
+                <li><a href="our-service.html"">Services</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>                   
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="btn">
+               <a href="explore-menu.html"> <button>Order Now</button>
+               </a>
+            </div>
+
+        </div>
+        <div class="hero-content fade-up fade-up-delay-1">
+            <div class="hero-text">
+                <h2>About Us</h2>
+                
+            </div>
+        </div>
+    </div>
+
+      <!----=====Our Menu section, first section=====-->
+      <div class="ourmenu">
+        <div class="about-us-firstsection">
+            <p>At BenjyGrub, we bring fresh, high-quality meals straight to busy professionals. What started as a simple takeaway sandwich bar has grown into a go-to service for office deliveries, corporate catering, and private in-house dining. Whether you need a quick bite at work or a full spread for a meeting, we make delicious, convenient meals accessible. Our mission is simple, great food, hassle-free service, wherever you need it</p>
+
+            <div class="card-items">
+                <div class="card-one">
+                    <h2>15+</h2>
+                    <p>Staff Members</p>
+                </div>
+                <div class="card-two">
+                    <h2>7k+</h2>
+                    <p>Orders Sold</p>
+                </div>
+                <div class="card-three">
+                    <h2>101%</h2>
+                    <p>Satisfied Customers</p>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+
+       <div class="menu-second-section">
+         
+        <h2>Crafted with Care, Layered with Flavor</h2>
+        <p>At BenjyGrub, every sandwich tells a story, one of fresh, high-quality ingredients, expertly layered flavors, and a love for good food. Whether you’re craving a classic club or an adventurous gourmet creation, we build each bite to perfection</p>
+        <button>Order Now</button>
+
+    </div>
+   
+    <div class="menu-third-section">
+        <div class="first-section">
+            <h2>We also offer unique services for your events</h2>
+
+            <div class="first-section-service-item">
+                <h3>Private In-House Dining</h3>
+
+                <p>We offer organized dining experiences, possibly for corporate or private events.</p>
+
+            </div>
+
+          
+        </div>
+    
+    
+        <div class="service-section">
+          
+            <div class="second-section-service-item1">
+                <h3>Office Deliveries</h3>
+    
+                <p>Employees can pre-order meals, and our staff can walk through offices selling sandwiches on a “stop me and buy one” basis</p>
+    
+            </div>
+            <div class="second-section-service-item2">
+                <h3>Catering for Meetings</h3>
+    
+                <p>We provide ready-made lunches for office meetings, especially for businesses that lack their own catering teams.</p>
+    
+            </div>
+            <div class="second-section-service-item3">
+                <h3>Public Sales</h3>
+    
+                <p>Customers can still purchase products directly from our takeaway location.</p>
+    
+            </div>
+         
+         
+            
+    
+        </div>
+     </div>
+
+
+     
+       
+       <!----====Footer Section,=====-->
+       <div class="footer">
+        <div class="upper-section">
+           
+            <div class="logo-text">
+<img src="./img/logo-footer.png" alt="logo footer">
+                <p>Employees can pre-order meals, and BenjyGrub staff can walk through offices selling sandwiches on a “stop me and buy one” basis
+
+                </p>
+            </div>
+            <div class="pages">
+                <h2>Pages</h2>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore-menu.html">Menu</a></li>
+                <li><a href="our-service.html"">Services</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+            </div>
+            <div class="insta">
+            <h2> 
+                <a href="#">
+                Follow us on instagram <i class="fa-brands fa-instagram"></i>
+            </a>
+            </h2>
+            <div class="insta-item">
+                <div class="insta-img">
+                    <img src="./img/item11.jpg" alt="footer-image-1">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item12.jpg" alt="footer-image-2">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item13.jpg" alt="footer-image-3">
+                </div>
+                <div class="insta-img">
+                    <img src="./img/item14.jpg" alt="footer-image-4">
+                </div>
+            </div>
+            
+            </div>
+     
+       
+        </div>
+        <div class="lower-section">
+           
+            <p>Copyright © 2025 BenjyGrub. All Rights Reserved</p>
+        </div>
+       </div>
+    
+       <script src="./js/main.js"></script>
+</body>
+</html>
