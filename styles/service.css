@@ -1,0 +1,505 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Hero section background */
+.hero-section {
+    background-image: url(../img/flat-lay-.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 90%;
+ margin-top: 35px;
+ position: relative;
+    top: 0;
+    left: 50%;
+    height: 10vh;
+    border-radius:50px;
+  
+    transform: translateX(-50%);
+}
+
+
+/* Logo */
+.nav .logo img {
+    width: 120px; 
+}
+/* Navigation menu */
+.nav .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav .menu ul li {
+    list-style: none;
+}
+
+.nav .menu ul li a {
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: #A2191E;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+/* Underline effect */
+.nav .menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #A2191E; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover and active state */
+.nav .menu ul li a:hover::after,
+.nav .menu ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Change text color on hover */
+.nav .menu ul li a:hover {
+    color: #CC3137;
+}
+
+
+/* Order button */
+.nav .btn{
+    margin-right: 15px;
+}
+
+.nav .btn button {
+    background-color: transparent;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, #CC3137 0%, #66191C 100%);
+    border: none;
+   border-radius: 40px;
+   padding: 10px 20px 10px 20px;
+   color: #fff;
+ 
+  
+}
+
+.nav .btn button:hover {
+    background-color: darkred;
+}
+/* Hero content */
+.hero-section .hero-content{
+    margin-top: 14vh; 
+    text-align: center;
+    padding: 0px 14%;
+    margin-bottom: 80px;
+   
+}
+.hero-section .hero-content h2{
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 86px;
+    font-weight: 800;
+    line-height: 112px;
+    color: #FFFFFF;
+    letter-spacing: -3%;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #1C0404 0%, #420E0E 90%);
+    color: white;
+    padding: 60px 10%;
+    text-align: left;
+}
+
+/* Upper Section Layout */
+.footer .upper-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Logo & Description */
+.footer .logo-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .logo-text img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.footer .logo-text p {
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.62);
+    max-width: 320px;
+}
+
+/* Pages List */
+.footer .pages {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer .pages h2 {
+    font-family: "Playfair Display", Sans-serif;
+   font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.footer .pages li {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+   
+}
+
+.footer .pages li a {
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer .pages li a:hover {
+    color: #CC3137;
+}
+
+/* Instagram Section */
+.footer .insta {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .insta h2  {
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -3%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer .insta h2 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -3%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer .insta h2 i {
+    font-size: 24px;
+    color:  rgba(255, 255, 255, 1);
+  
+}
+.footer .insta-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Wrap the image inside a div */
+.footer .insta-item .insta-img {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Apply the background gradient on the div */
+.footer .insta-item .insta-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(125.89deg, rgba(0, 0, 0, 0.099) 7.75%, rgba(0, 0, 0, 0.9) 93.75%);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Make sure images fit correctly */
+.footer .insta-item .insta-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.footer .insta-item .insta-img:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Lower Section - Copyright */
+.footer .lower-section p {
+    font-family: "DM Sans", Sans-serif;
+    font-weight: 400;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    font-size: 13px;
+    vertical-align: middle;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.second-section div:nth-last-child(-n+2) {
+    display: none;
+}
+
+
+
+.carousel-arrow{
+    display: none !important;
+}
+.menu-toggle{
+    display: none;
+}
+/* Fade-up animation */
+
+/* Responsive Design */
+@media (max-width: 769px) {
+   
+  
+    .hero-section{
+        min-height: 510px !important;
+    }
+    
+    .hero-section .hero-content{
+       margin-top: 75px  !important;
+        padding: 0px 10px  !important;
+
+    }
+    .hero-section .hero-content h2{
+        font-family: "Playfair Display", Sans-serif;
+        font-size: 33px;
+        font-weight: 800;
+        line-height: 48px;
+        color: #FFFFFF;
+        letter-spacing: -3%;
+        padding-bottom: 20px;
+    }
+    .hero-section .hero-content p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+  
+   
+    
+ 
+    .ourmenu .menu-third-section .first-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .ourmenu .menu-third-section .first-section h2 {
+        width: 85%;
+        height: auto;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .ourmenu .menu-third-section .first-section div {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .ourmenu .menu-third-section {
+        padding: 40px 20px;
+    }
+    .second-section div:nth-last-child(-n+2) {
+       display: inline-flex;
+    }
+    
+
+  
+    .footer .upper-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer .logo-text,
+    .footer .pages,
+    .footer .insta {
+        text-align: left;
+    }
+
+    .footer .insta h2 {
+        justify-content: left;
+    }
+    
+    
+
+}
+@media (max-width: 1024px) {
+    .nav .menu {
+        position: fixed;
+        top: -10vh;
+        left: -4vh;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: flex-start; /* Align content to the top */
+        padding: 80px 20px 20px 20px; /* Top padding to avoid toggle, left/right/bottom padding */
+        padding-left: 20px;
+        transform: translateX(-120%); /* Hide off-screen */
+        transition: transform 0.3s ease-in-out; /* Animate transform */
+        z-index: 1000; /* Ensure menu is above other content */
+    }
+
+    .nav .menu.active {
+        transform: translateX(0); /* Slide into view */
+    }
+    .nav .menu ul {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        color: #A2191E;
+        cursor: pointer;
+    }
+    .nav .btn {
+        display: none !important;
+    }
+
+ 
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        color: #A2191E;
+        cursor: pointer;
+        z-index: 1001; /* Ensure toggle is above menu */
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .second-section-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+   /* Replace existing .second-section div styles */
+.second-section {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+
+
+.second-section div {
+    flex: 0 0 100%; /* Each item takes full container width */
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+
+.second-section-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 24px;
+    display: block !important;
+}
+
+.prev-arrow { left: 20px; }
+.next-arrow { right: 20px; }
+}
